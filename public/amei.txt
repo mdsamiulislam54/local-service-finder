@@ -1,0 +1,33 @@
+
+import { useEffect, useState } from 'react'
+import './App.css'
+
+
+
+function App() {
+  const [theme, setTheme] = useState('')
+  useEffect(()=>{
+    const savedThems = localStorage.getItem('theme')|| 'light';
+    setTheme(savedThems)
+    document.documentElement.setAttribute("data-theme", savedThems)
+
+  },[])
+
+  const toggleTheme = ()=>{
+    const newTheme = theme === "light" ? "dark":"light"
+    setTheme(newTheme)
+    localStorage.setItem("theme", newTheme)
+    document.documentElement.setAttribute("data-theme", newTheme)
+  }
+
+  return (
+    <>
+        <button className="btn btn-primary" onClick={toggleTheme}>
+          Toggle to {theme === 'light' ? 'Dark' : 'Light'} Mode
+        </button>
+      
+    </>
+  )
+}
+
+export default App
