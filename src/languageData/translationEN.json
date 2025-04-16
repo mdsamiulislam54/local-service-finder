@@ -9,8 +9,8 @@
         "service1": "Fan and Light Installation",
         "service2": "Switch and Socket Repair",
         "service3": "Complete Home Electrical Wiring",
-        "service4": "Short Circuit & Fuse Fixing",
-        "service5": "IPS/UPS Setup and Maintenance"
+        "service4": "Short Circuit & Fuse Fixing"
+   
       },
       "logoname":{
         "name":"SebaFinder"
@@ -18,9 +18,15 @@
       "login":{
         "name":"Login"
       },
-      "banner": {
-        "title": "All Your Services in One Place",
-        "description": "Find expert electricians, plumbers,technicians and more near you.\nSebaFinder makes it fast and easy.",
-        "button": "Find Services"
+      "about": {
+        "heading": "About Us",
+        "title": "Outstanding Residential & Commercial Services",
+        "description": "All of our services are backed by our 100% satisfaction guarantee. Our electricians can install anything from new security lighting for your outdoors to a whole home generator that will keep your appliances working during a power outage.",
+        "list": {
+          "item1": "Full-service electrical layout, design",
+          "item2": "Wiring and installation/upgrades",
+          "item3": "Emergency power solutions (generators)",
+          "item4": "Virtually any electrical needs you have – just ask!"
+        }
       }
-}
+    }
