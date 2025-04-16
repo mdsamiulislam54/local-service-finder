@@ -11,5 +11,16 @@
         "service3": "Complete Home Electrical Wiring",
         "service4": "Short Circuit & Fuse Fixing",
         "service5": "IPS/UPS Setup and Maintenance"
+      },
+      "logoname":{
+        "name":"SebaFinder"
+      },
+      "login":{
+        "name":"Login"
+      },
+      "banner": {
+        "title": "All Your Services in One Place",
+        "description": "Find expert electricians, plumbers,technicians and more near you.\nSebaFinder makes it fast and easy.",
+        "button": "Find Services"
       }
 }

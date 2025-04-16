@@ -1,6 +1,7 @@
 
 
 import './App.css'
+import Banner from './Componants/Navbar/Banner/Banner'
 import Navbar from './Componants/Navbar/Navbar'
 import { BrowserRouter as Router, Route  } from 'react-router-dom'
 
@@ -12,6 +13,7 @@ function App() {
     <>
     <Router>
     <Navbar/>
+    <Banner/>
     </Router>
     
       
