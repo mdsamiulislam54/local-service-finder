@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
-import i18n from "../../../i18n";
+import i18n from "../../i18n";
 const Navbar = () => {
   const [theme, setTheme] = useState("");
   useEffect(() => {
@@ -97,9 +97,7 @@ const Navbar = () => {
                     <li>
                       <Link>{t("services.service4")}</Link>
                     </li>
-                    <li>
-                      <Link>{t("services.service5")}</Link>
-                    </li>
+                   
                   </ul>
                 </details>
               </li>
@@ -143,9 +141,7 @@ const Navbar = () => {
                   <li>
                     <Link>{t("services.service4")}</Link>
                   </li>
-                  <li>
-                    <Link>{t("services.service5")}</Link>
-                  </li>
+                
                 </ul>
               </details>
             </li>
@@ -173,21 +169,21 @@ const Navbar = () => {
           <div className="flex items-center gap-1 border rounded-md px-2 py-1 bg-base-200 max-lg:hidden">
             <button
               onClick={() => i18n.changeLanguage("en")}
-              className="text-sm px-2 py-1 hover:bg-primary hover:text-white rounded transition duration-200"
+              className="text-sm px-2 py-1 hover:bg-red-600 hover:text-white rounded transition duration-200"
             >
               EN
             </button>
             <span className="text-gray-400">|</span>
             <button
               onClick={() => i18n.changeLanguage("bn")}
-              className="text-sm px-2 py-1 hover:bg-primary hover:text-white rounded transition duration-200"
+              className="text-sm px-2 py-1 hover:bg-red-600 hover:text-white rounded transition duration-200"
             >
               BN
             </button>
           </div>
 
           {/* Login Button */}
-          <a className="btn btn-primary px-5 py-2 text-sm font-semibold">
+          <a className="btn bg-red-600 px-5 text-white py-2 text-sm font-semibold">
             {t("login.name")}
           </a>
         </div>

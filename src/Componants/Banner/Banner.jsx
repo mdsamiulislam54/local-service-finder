@@ -4,11 +4,11 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-import Images1 from "../../../assets/s-1.jpg";
-import Images2 from "../../../assets/s-2.jpg";
-import Images3 from "../../../assets/s-3.jpg";
-import Images4 from "../../../assets/s-4.jpg";
-import Images5 from "../../../assets/s-5.jpg";
+import Images1 from "../../assets/s-1.jpg";
+import Images2 from "../../assets/s-2.jpg";
+import Images3 from "../../assets/s-3.jpg";
+import Images4 from "../../assets/s-4.jpg";
+import Images5 from "../../assets/s-5.jpg";
 import './style.css'
 
 import { useTranslation } from "react-i18next";
@@ -71,7 +71,7 @@ const Banner = () => {
               <img
                 src={item.image}
                 alt="Banner"
-                className="w-full h-full object-cover scale-110 animate-zoom duration-[4000ms]"
+                className="w-full h-[100vh] object-cover scale-110 animate-zoom duration-[4000ms]"
               />
               <div className="absolute top-0 left-0 w-full h-[100vh] bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
                 <h2 className="text-3xl lg:text-5xl font-bold mb-3 drop-shadow">
@@ -80,7 +80,7 @@ const Banner = () => {
                 <p className="text-lg mb-4">
                   {currentLang === "bn" ? item.desc_bn : item.desc_en}
                 </p>
-                <button className="px-5 py-2 bg-primary rounded text-white hover:bg-primary/80 transition">
+                <button className="px-10 py-2 bg-red-600 rounded text-white hover:bg-primary/80 transition">
                   {currentLang === "bn" ? "বুক করুন" : "Book Now"}
                 </button>
               </div>
