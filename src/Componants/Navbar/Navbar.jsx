@@ -20,7 +20,7 @@ const Navbar = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="navbar bg-base-100 shadow-md">
+    <nav className="navbar bg-base-100 shadow-md sticky top-0 z-100">
       <div className="w-10/12 mx-auto flex">
         <div className="navbar-start">
           <div className="dropdown">

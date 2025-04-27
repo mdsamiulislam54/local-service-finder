@@ -35,7 +35,7 @@ const Footer = () => {
             <div>
               <h4>{currentLang === "bn" ? "ইমেইল" : "EMAIL"}</h4>
               <p className="text-sm">samiulm5332@gmail.com</p>
-              <button className="btn my-2">
+              <button className="btn my-2 bg-red-500 text-white">
                 {currentLang === "bn" ? "অভিযোগ পাঠান" : "Complain Box"}
               </button>
             </div>
@@ -75,12 +75,12 @@ const Footer = () => {
                   <FaTelegramPlane  size={24}/>
                 </span>
               </span>
-              <span className="my-4 flex  gap-5 ">
-                <FaFacebookSquare size={24} />
+              <span className="my-4 flex  gap-5  ">
+                <FaFacebookSquare size={24} color="red"/>
                
-                <FaYoutubeSquare size={24} />
-                <FaTwitterSquare size={24} />
-                <FaInstagramSquare size={24} />
+                <FaYoutubeSquare size={24} color="red" />
+                <FaTwitterSquare size={24} color="red" />
+                <FaInstagramSquare size={24} color="red" />
               </span>
             </div>
           </div>
