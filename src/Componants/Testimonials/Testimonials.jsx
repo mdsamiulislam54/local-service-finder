@@ -32,16 +32,16 @@ const Testimonials = () => {
           }}
           
           modules={[Pagination]}
-          className="swiper"
+          className="swiper_b"
         >
           {data.map((item) => (
             <SwiperSlide key={item.id} className="swiper-slide">
               <div className="  rounded-lg  text-center w-full">
                 <FaQuoteLeft className="text-4xl text-green-600 mx-auto mb-4" />
-                <p className="text-lg text-gray-700 italic mb-6">
+                <p className="text-lg  italic mb-6">
                  { item.name}
                 </p>
-                <h4 className="text-5xl font-semibold text-gray-800">
+                <h4 className="text-5xl font-semibold ">
                   {currentLang === 'bn'? item.serviceBn : item.serviceEn}
                 </h4>
                 <p className="text-lg my-4 font-light">

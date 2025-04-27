@@ -9,6 +9,7 @@ import AboutUs from './Componants/AboutUs/AboutUs'
 import FeatureSection from './Componants/FeatureSection/FeatureSection.jsx'
 import Testimonials from './Componants/Testimonials/Testimonials.jsx'
 import Brand from './Componants/Brand/Brand.jsx'
+import Footer from './Componants/Footer/Footer.jsx'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
    <FeatureSection/>
    <Testimonials/>
    <Brand/>
+   <Footer/>
     </Router>
     
       
