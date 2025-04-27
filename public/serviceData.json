@@ -1,0 +1,364 @@
+[
+  {
+    "id": 1,
+    "name": "Fan",
+    "serviceEn": "Fan & Light Installation",
+    "serviceBn": "ফ্যান ও লাইট লাগানো",
+
+    "benefits": [
+      "Quick and safe installation",
+      "High-quality wire & switch",
+      "Old fan removal & new setup",
+      "Post-installation cleaning",
+      "Budget-friendly service"
+    ],
+    "benefits_bn": [
+      "দ্রুত ও নিরাপদ ইন্সটলেশন",
+      "উন্নত মানের তার ও সুইচ",
+      "পুরাতন ফ্যান খুলে নতুন ফ্যান বসানো",
+      "ইন্সটলেশনের পর পরিষ্কার-পরিচ্ছন্নতা",
+      "সাশ্রয়ী মূল্য"
+    ],
+    "comments_en": [
+      {
+        "name": "Ahmed Ali",
+        "comment": "Excellent service, very fast."
+      },
+      {
+        "name": "Fatimah Zahra",
+        "comment": "Professional team, highly satisfied."
+      },
+      {
+        "name": "Omar ibn Khattab",
+        "comment": "Clean and safe installation."
+      },
+      {
+        "name": "Aisha bint Abu Bakr",
+        "comment": "Value for money service."
+      },
+      {
+        "name": "Hassan ibn Ali",
+        "comment": "Fast delivery and clean work."
+      }
+    ],
+    "comments_bn": [
+      {
+        "name": "আহমদ আলী",
+        "comment": "দারুন সার্ভিস, দ্রুত কাজ করলো।"
+      },
+      {
+        "name": "ফাতিমা যাহরা",
+        "comment": "অনেক পেশাদার টিম। খুব খুশি।"
+      },
+      {
+        "name": "উমর ইবন খাত্তাব",
+        "comment": "পরিষ্কার-পরিচ্ছন্ন এবং নিরাপদ ইন্সটলেশন।"
+      },
+      {
+        "name": "আইশা বিনত আবু বকর",
+        "comment": "দাম অনুযায়ী অসাধারণ।"
+      },
+      {
+        "name": "হাসান ইবন আলী",
+        "comment": "ফাস্ট ডেলিভারি আর পরিষ্কার কাজ।"
+      }
+    ],
+    "description_en": {
+      "part1": "Installing a fan is often seen as a simple task, but it requires precision and expertise to ensure safety and efficiency. At [Your Service Name], we specialize in professional fan installation that guarantees both reliability and performance. Whether it's a ceiling fan, exhaust fan, or table fan, our expert team of electricians ensures your fan is installed correctly, operating efficiently, and designed for safety.",
+      "part2": "Why is professional fan installation so important? The main reason is safety. Poorly installed fans can lead to electrical issues, which may cause fires or electrocution. A professional ensures the fan is mounted correctly, with the proper wiring and switch connections. Additionally, professionals know how to balance the fan blades and check the electrical connections, ensuring smooth operation without vibrations or noise.",
+      "part3": "Our team uses high-quality materials to ensure durability and safety. We provide a full range of fan installation services, including mounting, wiring, and even fan replacement. We handle all types of fans, including ceiling fans, exhaust fans, and tower fans, offering expert advice on which fan is suitable for your space",
+      "part4": "If you're installing a fan in your home or office, it's essential to have it done by an experienced technician who knows how to choose the right fan for your space and ensure it's installed safely. At [Your Service Name], our technicians are fully trained and equipped to handle any fan installation, no matter how complex the job may be."
+    },
+    "description_bn": {
+      "part1": "একটি ফ্যান বসানো অনেকের কাছেই সহজ কাজ বলে মনে হতে পারে, কিন্তু এটি নিরাপত্তা ও কার্যকারিতা নিশ্চিত করার জন্য সঠিক দক্ষতা ও অভিজ্ঞতা দরকার। [আপনার সার্ভিসের নাম]-এ আমরা পেশাদার ফ্যান ইনস্টলেশন সার্ভিস দিয়ে থাকি, যা নিশ্চিত করে নির্ভরযোগ্যতা ও কার্যকারিতা। সিলিং ফ্যান হোক বা এক্সজস্ট ফ্যান কিংবা টেবিল ফ্যান — আমাদের দক্ষ ইলেকট্রিশিয়ান টিম সঠিকভাবে ফ্যান ইনস্টল করে, যাতে এটি সুষ্ঠুভাবে চলে এবং সম্পূর্ণ নিরাপদ থাকে।",
+      "part2": "পেশাদার ফ্যান ইনস্টলেশনের সবচেয়ে বড় কারণ হচ্ছে নিরাপত্তা। ভুলভাবে লাগানো ফ্যান থেকে বৈদ্যুতিক দুর্ঘটনা, শর্টসার্কিট এমনকি আগুন লাগার সম্ভাবনা থাকে। একজন পেশাদার টেকনিশিয়ান নিশ্চিত করেন ফ্যান সঠিকভাবে মাউন্ট করা হয়েছে কিনা, তার তারের সংযোগ ঠিক আছে কিনা এবং সুইচের কানেকশন সঠিক আছে কিনা। এছাড়া, তারা ফ্যানের ব্লেডের ব্যালান্স ঠিক করে এবং সংযোগগুলো পরীক্ষা করে নিশ্চিত করেন যেন কোনো শব্দ বা কম্পন ছাড়াই মসৃণভাবে চলে।",
+      "part3": "[আপনার সার্ভিসের নাম] সবসময় ভালো মানের ম্যাটেরিয়াল ব্যবহার করে, যাতে দীর্ঘস্থায়ী ও নিরাপদ ফ্যান ইনস্টলেশন করা যায়। আমরা সম্পূর্ণ ফ্যান ইনস্টলেশন সার্ভিস দিয়ে থাকি — যেমন মাউন্টিং, ওয়্যারিং, এমনকি পুরনো ফ্যান বদলে নতুন ফ্যান লাগানো। সিলিং ফ্যান, এক্সজস্ট ফ্যান, টাওয়ার ফ্যানসহ যেকোনো ধরনের ফ্যান আমরা দক্ষতার সঙ্গে ইনস্টল করে দিই এবং আপনার ঘরের জন্য কোন ধরনের ফ্যান উপযুক্ত সেটাও পরামর্শ দিই।",
+      "part4": "বাসা বা অফিসে ফ্যান বসানোর সময় অবশ্যই অভিজ্ঞ টেকনিশিয়ান দিয়ে কাজ করানো উচিত। কারণ, তারা বুঝতে পারে কোন ধরনের ফ্যান আপনার রুমের জন্য ভালো হবে এবং সেটি কীভাবে নিরাপদভাবে ইনস্টল করতে হবে। [আপনার সার্ভিসের নাম]-এর দক্ষ টেকনিশিয়ানরা সম্পূর্ণ ট্রেইন্ড এবং যেকোনো জটিল বা সহজ ফ্যান ইনস্টলেশনের জন্য প্রস্তুত। আপনার চাহিদা অনুযায়ী সেরা সার্ভিস দিতে আমরা অঙ্গীকারবদ্ধ।"
+    },
+
+    "pricing": [
+      {
+        "name": "Basic Fan Installation",
+        "price": 500
+      },
+      {
+        "name": "Advanced Fan Installation",
+        "price": 800
+      },
+      {
+        "name": "Emergency Fan Installation",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Switch",
+    "serviceEn": "Switch & Socket Repair",
+    "serviceBn": "সুইচ ও সকেট মেরামত",
+
+    "price": 250,
+    "price_card": "Basic Switch Repair",
+    "benefits": [
+      "Quick troubleshooting",
+      "Safe replacement",
+      "Durable materials",
+      "Warranty on repair"
+    ],
+    "benefits_bn": [
+      "দ্রুত সমস্যা সমাধান",
+      "নিরাপদ রিপ্লেসমেন্ট",
+      "টেকসই মালামাল",
+      "মেরামতের ওয়ারেন্টি"
+    ],
+    "comments_en": [
+      {
+        "name": "Abu Bakr",
+        "comment": "Fast service, problem fixed quickly."
+      },
+      {
+        "name": "Khadijah bint Khuwaylid",
+        "comment": "Great behavior and good work."
+      },
+      {
+        "name": "Bilal ibn Rabah",
+        "comment": "Reasonable price, perfect service."
+      },
+      {
+        "name": "Umm Salama",
+        "comment": "No issues after repair."
+      },
+      {
+        "name": "Ibn Abbas",
+        "comment": "On-time delivery."
+      }
+    ],
+    "comments_bn": [
+      {
+        "name": "আবু বকর",
+        "comment": "দ্রুত সার্ভিস, সমস্যা ঠিক করলো।"
+      },
+      {
+        "name": "খাদিজা বিনত খুয়াইলিদ",
+        "comment": "ভালো ব্যবহার আর দারুন কাজ।"
+      },
+      {
+        "name": "বিলাল ইবন রাবাহ",
+        "comment": "দাম অনুযায়ী সেরা সার্ভিস।"
+      },
+      {
+        "name": "উম্ম সালামা",
+        "comment": "মেরামতের পর কোনো সমস্যা হয়নি।"
+      },
+      {
+        "name": "ইবন আব্বাস",
+        "comment": "সময়মতো কাজ শেষ।"
+      }
+    ],
+    "description_en": {
+      "part1": "Switches are one of the most common electrical components found in any home or office. Whether it's for lights, fans, or other appliances, switches play a crucial role in controlling electrical devices. However, over time, switches can become faulty due to wear and tear or internal issues. At [Your Service Name], we offer professional switch repair services to restore functionality and ensure your electrical system works efficiently.",
+      "part2": "Switch repair involves more than just replacing a broken switch. Our technicians carefully inspect the switch mechanism to diagnose the problem. Whether it's a loose connection, a faulty circuit, or a worn-out component, we ensure that the repair is carried out with precision and safety. We also offer switch replacement services, where we replace your old, faulty switches with brand-new ones, ensuring they meet modern safety standards.",
+      "part3": "Many people tend to ignore minor switch issues, thinking they are not a big deal. However, a malfunctioning switch can cause significant electrical hazards. Faulty switches can lead to power surges, short circuits, or even electrical fires. Therefore, it’s important to address the issue as soon as possible.",
+      "part4": "At Switch, we specialize in providing reliable and efficient switch repair services. Our team of experienced electricians is equipped with the necessary tools and skills to handle all types of switch repairs. We pride ourselves on offering affordable services without compromising on quality."
+    },
+    "description_bn": {
+      "part1": "সুইচগুলি যে কোনো বাড়ি বা অফিসে থাকা অন্যতম সাধারণ বৈদ্যুতিক উপাদান। এটি লাইট, ফ্যান বা অন্যান্য যন্ত্রপাতির জন্য ব্যবহৃত হয় এবং বৈদ্যুতিক ডিভাইসগুলির নিয়ন্ত্রণে গুরুত্বপূর্ণ ভূমিকা পালন করে। তবে, সময়ের সাথে সাথে সুইচগুলি ক্ষতিগ্রস্ত হতে পারে, যেমন ঘর্ষণ বা অভ্যন্তরীণ সমস্যার কারণে। [আপনার সেবা নাম] এ আমরা পেশাদার সুইচ মেরামত পরিষেবা প্রদান করি, যাতে সঠিকভাবে কাজ করে এবং আপনার বৈদ্যুতিক সিস্টেম সঠিকভাবে কাজ করতে পারে।",
+      "part2": "সুইচ মেরামত শুধুমাত্র একটি ভাঙা সুইচ প্রতিস্থাপন করা নয়। আমাদের টেকনিশিয়ানরা সুইচের মেকানিজমটি সতর্কতার সাথে পরীক্ষা করে সমস্যাটি চিহ্নিত করেন। এটি একটি ঢিলা সংযোগ, একটি ত্রুটিপূর্ণ সার্কিট, অথবা একটি পরিধান করা উপাদান হতে পারে, আমরা নিশ্চিত করি যে মেরামতটি সঠিকভাবে এবং নিরাপদভাবে করা হয়েছে। আমরা সুইচ প্রতিস্থাপন পরিষেবাও প্রদান করি, যেখানে আমরা আপনার পুরানো, ত্রুটিপূর্ণ সুইচগুলো পরিবর্তন করে নতুন সুইচ লাগাই, যা আধুনিক নিরাপত্তা মানদণ্ডের সাথে মিলে।",
+      "part3": "অনেকে ছোটখাটো সুইচ সমস্যা উপেক্ষা করে মনে করেন এটি বড় কিছু নয়, তবে একটি ত্রুটিপূর্ণ সুইচ গুরুত্বপূর্ণ বৈদ্যুতিক ঝুঁকি তৈরি করতে পারে। ত্রুটিপূর্ণ সুইচগুলো শক্তির হঠাৎ বৃদ্ধি, শর্ট সার্কিট, অথবা এমনকি বৈদ্যুতিক আগুনের কারণ হতে পারে। তাই, সমস্যাটি যত তাড়াতাড়ি সম্ভব সমাধান করা জরুরি।",
+      "part4": " আমরা বিশ্বস্ত এবং দক্ষ সুইচ মেরামত পরিষেবা প্রদান করতে বিশেষজ্ঞ। আমাদের অভিজ্ঞ ইলেকট্রিশিয়ানরা সমস্ত ধরনের সুইচ মেরামতের জন্য প্রয়োজনীয় সরঞ্জাম এবং দক্ষতা দিয়ে কাজ করেন। আমরা গুণমানের প্রতি কোনো ধরনের ছাড় না দিয়ে সাশ্রয়ী মূল্যে পরিষেবা প্রদান করতে গর্বিত।"
+    },
+    "pricing": [
+      {
+        "name": "Basic Short Switch Repair",
+        "price": 400
+      },
+      {
+        "name": "Advanced Short Switch Repair",
+        "price": 600
+      },
+      {
+        "name": "Emergency Short Switch Repair",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Wiring",
+    "serviceEn": "Home Electrical Wiring",
+    "serviceBn": "সম্পূর্ণ ঘরের তারের কাজ",
+
+    "benefits": [
+      "High-quality wiring setup",
+      "Modern circuit system",
+      "Design-based wiring",
+      "Warranty supported service"
+    ],
+    "benefits_bn": [
+      "উন্নত তার সংযোগ",
+      "আধুনিক সার্কিট সিস্টেম",
+      "ডিজাইন অনুযায়ী তার সংযোগ",
+      "ওয়ারেন্টি সহকারে সার্ভিস"
+    ],
+    "comments_en": [
+      {
+        "name": "Ali ibn Abi Talib",
+        "comment": "Great service, finished on time."
+      },
+      {
+        "name": "Zaynab bint Ali",
+        "comment": "Reliable team and safe work."
+      },
+      {
+        "name": "Hassan ibn Ali",
+        "comment": "Value for money wiring service."
+      },
+      {
+        "name": "Fatimah bint Muhammad",
+        "comment": "Modern and clean wiring layout."
+      },
+      {
+        "name": "Umar ibn al-Khattab",
+        "comment": "Highly satisfied with their work."
+      }
+    ],
+    "comments_bn": [
+      {
+        "name": "আলী ইবন আবি তালিব",
+        "comment": "অনেক ভালো সার্ভিস, সময়মতো শেষ।"
+      },
+      {
+        "name": "জায়নাব বিনত আলী",
+        "comment": "নির্ভরযোগ্য টিম এবং নিরাপদ কাজ।"
+      },
+      {
+        "name": "হাসান ইবন আলী",
+        "comment": "দাম অনুযায়ী দারুন সার্ভিস।"
+      },
+      {
+        "name": "ফাতিমা বিনত মুহাম্মদ",
+        "comment": "আধুনিক এবং পরিষ্কার তার সংযোগ।"
+      },
+      {
+        "name": "উমর ইবন আল-খাত্তাব",
+        "comment": "তাদের কাজ দেখে সন্তুষ্ট।"
+      }
+    ],
+    "description_en": {
+      "part1": "House wiring is the foundation of any electrical system, providing the necessary infrastructure for power distribution throughout your home. Proper wiring ensures the safe and efficient operation of electrical appliances, lighting systems, and other devices. At [Your Service Name], we specialize in high-quality residential wiring services to ensure your home’s electrical system is safe, reliable, and up to modern standards.",
+      "part2": "When it comes to house wiring, it’s crucial to hire a licensed and experienced professional. Poorly installed wiring can lead to various problems, including short circuits, power outages, and even fires. At [Your Service Name], our team of electricians is highly skilled in providing secure and efficient wiring solutions for both new homes and existing properties. We ensure that the wiring meets all necessary safety codes and regulations.",
+      "part3": "Our house wiring service includes the installation of electrical panels, outlets, switches, and lighting fixtures. We also offer wiring solutions for special appliances and systems, such as air conditioning units, home entertainment systems, and security systems. Whether you are building a new home or renovating an old one, our team will provide tailored solutions based on your specific needs.",
+      "part4": "Safety:  The most important reason to hire professionals for wiring is safety. Faulty wiring is a leading cause of electrical fires. We take extra care in ensuring that your wiring system is installed correctly, using high-quality materials and following all local electrical codes"
+    },
+    "description_bn": {
+      "part1": "বাড়ির বৈদ্যুতিক সার্ভিস সিস্টেমের একটি গুরুত্বপূর্ণ অংশ হল বাড়ির ওয়ারিং। এটি হল সেই অবকাঠামো যা আপনার বাড়ির বিদ্যুৎ সরবরাহের জন্য প্রয়োজনীয় পথ তৈরি করে। সঠিকভাবে করা ওয়্যারিং আপনাকে বাড়ির বৈদ্যুতিক যন্ত্রপাতি, লাইটিং সিস্টেম এবং অন্যান্য ডিভাইসের নিরাপদ এবং কার্যকরী ব্যবহারের নিশ্চয়তা দেয়। [আপনার সেবা নাম] এ, আমরা উচ্চমানের গৃহ ওয়ারিং পরিষেবা প্রদান করি যা আপনার বাড়ির বৈদ্যুতিক সিস্টেমকে নিরাপদ, নির্ভরযোগ্য এবং আধুনিক মান অনুযায়ী কাজ করতে নিশ্চিত করে।",
+      "part2": "গৃহ ওয়্যারিং করার সময়, একজন লাইসেন্সধারী এবং অভিজ্ঞ পেশাদারকেই নিয়োগ করা জরুরি। খারাপভাবে করা ওয়্যারিং বিভিন্ন সমস্যা সৃষ্টি করতে পারে, যেমন শর্ট সার্কিট, বিদ্যুৎ বিভ্রাট, বা এমনকি আগুন লাগার সম্ভাবনা। [আপনার সেবা নাম] এ আমাদের ইলেকট্রিশিয়ানরা গৃহ ওয়্যারিংয়ের ক্ষেত্রে অত্যন্ত দক্ষ, যারা নতুন বাড়ি বা পুরানো বাড়ির জন্য নির্ভরযোগ্য এবং নিরাপদ ওয়ারিং ব্যবস্থা প্রদান করতে সক্ষম। আমরা নিশ্চিত করি যে আমাদের ওয়্যারিং সিস্টেম সকল নিরাপত্তা বিধি এবং স্থানীয় বৈদ্যুতিক কোড অনুযায়ী সম্পন্ন হচ্ছে।",
+      "part3": "আমাদের গৃহ ওয়্যারিং সেবায় বৈদ্যুতিক প্যানেল, আউটলেট, সুইচ এবং লাইটিং ফিক্সচার ইন্সটল করা হয়। আমরা বিশেষ যন্ত্রপাতি এবং সিস্টেমের জন্যও ওয়্যারিং ব্যবস্থা প্রদান করি, যেমন এসি ইউনিট, হোম এন্টারটেইনমেন্ট সিস্টেম এবং সিকিউরিটি সিস্টেম। আপনি নতুন বাড়ি তৈরি করছেন বা পুরানো বাড়ি সংস্কার করছেন, আমাদের টিম আপনার নির্দিষ্ট চাহিদার ভিত্তিতে একে একে সমাধান প্রদান করবে।",
+      "part4": "ওয়্যারিংয়ের ক্ষেত্রে সবচেয়ে গুরুত্বপূর্ণ বিষয় হলো নিরাপত্তা। ভুলভাবে করা ওয়্যারিং অনেক বড় বৈদ্যুতিক বিপদের সৃষ্টি করতে পারে। আমরা আপনার সিস্টেমটি সঠিকভাবে ইনস্টল করার জন্য প্রয়োজনীয় সতর্কতা গ্রহণ করি এবং উঁচু মানের উপকরণ ব্যবহার করি।",
+      "part5": "ওয়্যারিং এ আমরা গর্বিত যে আমরা নির্ভরযোগ্য এবং পেশাদার গৃহ ওয়্যারিং সেবা প্রদান করি যা আপনার বাড়ির নির্দিষ্ট চাহিদা পূর্ণ করে। আমাদের টিম আপনার বৈদ্যুতিক"
+    },
+    "pricing": [
+      {
+        "name": "Basic Wiring Package",
+        "price": 1500
+      },
+      {
+        "name": "Premium Wiring Package",
+        "price": 2000
+      },
+      {
+        "name": "Custom Wiring Package",
+        "price": 2500
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name_en": "ShortCiruit",
+    "serviceEn": "Short Circuit & Fuse Fix",
+    "serviceBn": "শর্ট সার্কিট ও ফিউজ ঠিক করা",
+    "price_card": "Premium House Wiring",
+    "benefits": [
+      "High-quality wiring setup",
+      "Modern circuit system",
+      "Design-based wiring",
+      "Warranty supported service"
+    ],
+    "benefits_bn": [
+      "উন্নত তার সংযোগ",
+      "আধুনিক সার্কিট সিস্টেম",
+      "ডিজাইন অনুযায়ী তার সংযোগ",
+      "ওয়ারেন্টি সহকারে সার্ভিস"
+    ],
+    "comments_en": [
+      {
+        "name": "Ali ibn Abi Talib",
+        "comment": "Great service, finished on time."
+      },
+      {
+        "name": "Zaynab bint Ali",
+        "comment": "Reliable team and safe work."
+      },
+      {
+        "name": "Hassan ibn Ali",
+        "comment": "Value for money wiring service."
+      },
+      {
+        "name": "Fatimah bint Muhammad",
+        "comment": "Modern and clean wiring layout."
+      },
+      {
+        "name": "Umar ibn al-Khattab",
+        "comment": "Highly satisfied with their work."
+      }
+    ],
+    "comments_bn": [
+      {
+        "name": "আলী ইবন আবি তালিব",
+        "comment": "অনেক ভালো সার্ভিস, সময়মতো শেষ।"
+      },
+      {
+        "name": "জায়নাব বিনত আলী",
+        "comment": "নির্ভরযোগ্য টিম এবং নিরাপদ কাজ।"
+      },
+      {
+        "name": "হাসান ইবন আলী",
+        "comment": "দাম অনুযায়ী দারুন সার্ভিস।"
+      },
+      {
+        "name": "ফাতিমা বিনত মুহাম্মদ",
+        "comment": "আধুনিক এবং পরিষ্কার তার সংযোগ।"
+      },
+      {
+        "name": "উমর ইবন আল-খাত্তাব",
+        "comment": "তাদের কাজ দেখে সন্তুষ্ট।"
+      }
+    ],
+    "description_en": {
+      "part1": "We provide a wide range of electrical services designed to meet all your needs. Our services include short circuit repair, new wiring system installation, switch and socket repair, and custom electrical solutions. Specifically, short circuits are a common issue and can become extremely dangerous if not addressed in a timely manner. Our experienced technicians quickly and accurately diagnose the problem, repairing it to ensure the safety of your home or office.",
+      "part2": "Similarly, old or damaged wiring systems can be a major risk to your home. If your home has outdated or unused wiring systems, we update them with new installations. We offer a new wiring installation service for all your electrical systems, ensuring safety and efficiency. Our services use high-quality materials for durability and safety, providing long-term solutions for your electrical needs.",
+      "part3": "Our switch repair service is also highly sought after. Many times, switches can develop issues that cause inconvenience, such as malfunctioning or poor connections. We repair these switches to ensure they function properly, helping to prevent any electrical risks or discomfort in your home.",
+      "part4": "Lastly, if you require any specialized electrical services, we also offer custom electrical solutions. You can choose services that meet your specific needs, which will be designed and implemented by our skilled technicians. Our services are affordable and reliable, and we prioritize the safety and satisfaction of our customers."
+    },
+    "description_bn": {
+      "part1": "আমরা আপনার জন্য বিভিন্ন বৈদ্যুতিক সেবা প্রদান করি যা আপনার জীবনের সকল প্রয়োজন মেটাতে সক্ষম। আমাদের সেবার মধ্যে শর্ট সার্কিট মেরামত, নতুন ওয়্যারিং সিস্টেম ইনস্টলেশন, সুইচ এবং সকেট রিপেয়ার এবং কাস্টম বৈদ্যুতিক সলিউশন রয়েছে। বিশেষ করে, শর্ট সার্কিট একটি সাধারণ সমস্যা এবং এটি একটি অত্যন্ত বিপজ্জনক অবস্থায় পরিণত হতে পারে যদি তা সময়মতো মেরামত না করা হয়। আমাদের অভিজ্ঞ টেকনিশিয়ানরা দ্রুত এবং সঠিকভাবে সমস্যাটি চিহ্নিত করে, এবং এটি সমাধান করে যাতে আপনার বাসা বা অফিসের নিরাপত্তা সুরক্ষিত থাকে।",
+      "part2": "একইভাবে, পুরানো বা ক্ষতিগ্রস্ত ওয়্যারিং সিস্টেম আপনার বাড়ির জন্য একটি বড় ঝুঁকি হতে পারে। তাই, যদি আপনার বাসায় পুরনো বা অব্যবহৃত ওয়্যারিং সিস্টেম থাকে, আমরা সেগুলি নতুনভাবে আপডেট করি। আমরা আপনার সমস্ত বৈদ্যুতিক সিস্টেমের জন্য একটি নতুন ওয়্যারিং ইনস্টলেশন সেবা প্রদান করি যা আপনার সুরক্ষা এবং কার্যকারিতা নিশ্চিত করবে। আমাদের সেবায় রয়েছে নিরাপত্তা এবং দীর্ঘস্থায়ী স্থায়িত্বের জন্য উন্নত মানের উপকরণ ব্যবহার।",
+      "part3": "আমাদের সুইচ রিপেয়ার সার্ভিসও অত্যন্ত জনপ্রিয়। অনেক সময় সুইচগুলির মধ্যে সমস্যা দেখা দেয় যা ব্যবহারে অসুবিধা সৃষ্টি করতে পারে, যেমন সুইচ নষ্ট হয়ে যাওয়া বা খারাপ সংযোগের কারণে। আমরা সেইসব সুইচ মেরামত করে, যাতে তারা আবার সঠিকভাবে কাজ করতে পারে। এটি আপনার বাড়ির বৈদ্যুতিক সংযোগে কোনও রকমের ঝুঁকি বা অস্বস্তি তৈরি না করতে সাহায্য করবে।",
+      "part4": "অবশেষে, যদি আপনার বিশেষ ধরনের বৈদ্যুতিক সেবা প্রয়োজন হয়, তবে আমরা কাস্টম বৈদ্যুতিক সলিউশনও প্রদান করি। আপনি আপনার নির্দিষ্ট প্রয়োজন অনুযায়ী সেবা নিতে পারবেন, যা আমাদের দক্ষ টেকনিশিয়ানরা তৈরি করবে। আমাদের পরিষেবাগুলি সাশ্রয়ী এবং নির্ভরযোগ্য, এবং আমরা আমাদের গ্রাহকদের নিরাপত্তা এবং সন্তুষ্টির উপর গুরুত্ব দিই।"
+    },
+    "pricing": [
+      {
+        "name": "Basic Short Circuit Repair",
+        "price": 500
+      },
+      {
+        "name": "Advanced Short Circuit Repair",
+        "price": 800
+      },
+      {
+        "name": "Emergency Short Circuit Repair",
+        "price": 1000
+      }
+    ]
+  }
+]

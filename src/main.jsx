@@ -5,6 +5,8 @@ import App from './App.jsx'
 import "./i18n";
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './Componants/Home/Home.jsx';
+import AboutUs from './Componants/AboutUs/AboutUs.jsx';
+import ServicesDetails from './Componants/ServicesDetails/ServicesDetails.jsx';
 const router = createBrowserRouter([
   {
     path:'/',
@@ -12,6 +14,14 @@ const router = createBrowserRouter([
     children:[
       {
         index:true , element:<Home/>
+      },
+      {
+        path:'/about',
+        element:<AboutUs/>
+      },
+      {
+        path:'services/:serviceName',
+        element:<ServicesDetails/>
       }
     ]
   }

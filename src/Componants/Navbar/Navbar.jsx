@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router";
+
 import i18n from "../../i18n";
+import { Link, useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const [theme, setTheme] = useState("");
+  const navigate = useNavigate();
   useEffect(() => {
     const savedThems = localStorage.getItem("theme") || "light";
     setTheme(savedThems);
@@ -18,6 +21,10 @@ const Navbar = () => {
   };
 
   const { t } = useTranslation();
+
+  const handleServicesPage = (Sname) => {
+    navigate(`/services/${Sname}`);
+  };
 
   return (
     <nav className="navbar bg-base-100 shadow-md sticky top-0 z-100">
@@ -85,19 +92,18 @@ const Navbar = () => {
                     {t("navbar.services")}
                   </summary>
                   <ul className="p-2 bg-base-100 rounded-t-none z-10 w-52 shadow">
-                    <li>
+                    <li onClick={() => handleServicesPage("Fan")}>
                       <Link>{t("services.service1")}</Link>
                     </li>
-                    <li>
+                    <li onClick={() => handleServicesPage("Switch")}>
                       <Link>{t("services.service2")}</Link>
                     </li>
-                    <li>
+                    <li onClick={() => handleServicesPage("Wiring")}>
                       <Link>{t("services.service3")}</Link>
                     </li>
-                    <li>
+                    <li onClick={() => handleServicesPage("ShortCircuit")}>
                       <Link>{t("services.service4")}</Link>
                     </li>
-                   
                   </ul>
                 </details>
               </li>
@@ -114,12 +120,12 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link className="text-xl font-medium tracking-wide">
+              <Link to={"/"} className="text-xl font-medium tracking-wide">
                 {t("navbar.home")}
               </Link>
             </li>
             <li>
-              <Link className="text-xl font-medium tracking-wide">
+              <Link to={"/about"} className="text-xl font-medium tracking-wide">
                 {t("navbar.about")}
               </Link>
             </li>
@@ -129,19 +135,18 @@ const Navbar = () => {
                   {t("navbar.services")}
                 </summary>
                 <ul className="p-2 bg-base-100 rounded-t-none z-10 w-72 shadow">
-                  <li>
+                  <li onClick={() => handleServicesPage("Fan")}>
                     <Link>{t("services.service1")}</Link>
                   </li>
-                  <li>
+                  <li onClick={() => handleServicesPage("Switch")}>
                     <Link>{t("services.service2")}</Link>
                   </li>
-                  <li>
+                  <li onClick={() => handleServicesPage("Wiring")}>
                     <Link>{t("services.service3")}</Link>
                   </li>
-                  <li>
+                  <li onClick={() => handleServicesPage("ShortCircuit")}>
                     <Link>{t("services.service4")}</Link>
                   </li>
-                
                 </ul>
               </details>
             </li>

@@ -73,7 +73,7 @@ const Banner = () => {
                 alt="Banner"
                 className="w-full h-[100vh] object-cover scale-110 animate-zoom duration-[4000ms]"
               />
-              <div className="absolute top-0 left-0 w-full h-[100vh] bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
+              <div className="absolute top-0 left-0 w-full h-[100%] bg-black/40 flex flex-col items-center justify-center text-white text-center px-4 ">
                 <h2 className="text-3xl lg:text-5xl font-bold mb-3 drop-shadow">
                   {currentLang === "bn" ? item.title_bn : item.title_en}
                 </h2>
