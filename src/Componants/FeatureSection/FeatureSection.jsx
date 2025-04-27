@@ -56,8 +56,11 @@ const FeatureSection = () => {
   return (
     <section className="py-16 ">
         <div className="w-10/12 mx-auto ">
-        <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
-        <p className="text-center  mb-12"> We offer a wide range of electrical services, including fan and light installation, switch and socket repair, complete home wiring, and short circuit & fuse fixing. Our skilled electricians are dedicated to providing safe, reliable, and efficient solutions tailored to your needs, ensuring your home and office are always powered and secure.</p>
+        <h2 className="text-3xl font-bold text-center mb-8">{currentLang === 'bn'?  " কেন আমাদের বেছে নেবেন " :"Why Choose Us"}</h2>
+        <p className="text-center  mb-12"> 
+          {currentLang === 'bn' ? "  আমরা ফ্যান এবং লাইট ইনস্টলেশন, সুইচ ও সকেট মেরামত, সম্পূর্ণ বাড়ির ওয়্যারিং, শর্ট সার্কিট এবং ফিউজ ঠিক করা সহ বিভিন্ন ইলেকট্রিক্যাল সার্ভিস প্রদান করি। আমাদের দক্ষ ইলেকট্রিশিয়ানরা নিরাপদ, নির্ভরযোগ্য এবং কার্যকর সমাধান প্রদান করতে প্রতিশ্রুতিবদ্ধ। ":"  We offer a wide range of electrical services, including fan and light installation, switch and socket repair, complete home wiring, and short circuit & fuse fixing. Our skilled electricians are dedicated to providing safe, reliable, and efficient solutions tailored to your needs, ensuring your home and office are always powered and secure."}
+      
+        </p>
         </div>
       <div className="w-10/12 mx-auto  grid lg:grid-cols-2 gap-12">
         {features.map((item) => (

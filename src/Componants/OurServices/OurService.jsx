@@ -53,8 +53,8 @@ const OurService = () => {
   return (
     <section className="py-22 ">
     <div className="max-w-6xl mx-auto px-4 text-center">
-      <h2 className="text-3xl font-bold mb-10 ">Our Services</h2>
-           <p className="text-center  mb-12">We offer a wide range of electrical services to meet your needs.</p>
+      <h2 className="text-3xl font-bold mb-10 "> {currentLang === "bn" ? "আমাদের সেবা সমূহ ":"Our Services"}</h2>
+           <p className="text-center  mb-12"> {currentLang === "bn"? "আমরা আপনার প্রয়োজন অনুযায়ী বিভিন্ন ধরনের ইলেকট্রিক্যাল সেবা প্রদান করি।":"We offer a wide range of electrical services to meet your needs."}</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <div

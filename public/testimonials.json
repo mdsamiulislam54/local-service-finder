@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "serviceEn": "Fan & Light Installation",
+      "serviceBn": "ফ্যান ও লাইট লাগানো",
+      "name": "Md Rimon Mia",
+      "feedbackEn": "The fan and light installation was super fast and neat. Highly recommended!",
+      "feedbackBn": "ফ্যান এবং লাইট লাগানোর কাজ খুব দ্রুত এবং সুন্দর হয়েছে। আমি খুবই সন্তুষ্ট।"
+    },
+    {
+      "id": 2,
+      "serviceEn": "Switch & Socket Repair",
+      "serviceBn": "সুইচ ও সকেট মেরামত",
+      "name": "Rahim Uddin",
+      "feedbackEn": "Switches and sockets were repaired safely. Great behavior from the technician.",
+      "feedbackBn": "সুইচ ও সকেট মেরামতের কাজ খুব নিরাপদভাবে করা হয়েছে। টেকনিশিয়ানের ব্যবহারও ভালো।"
+    },
+    {
+      "id": 3,
+      "serviceEn": "Home Electrical Wiring",
+      "serviceBn": "সম্পূর্ণ ঘরের তারের কাজ",
+      "name": "Sarah Smith",
+      "feedbackEn": "Full home wiring was completed in less time than expected. Good quality service.",
+      "feedbackBn": "পুরো ঘরের তারের কাজ নির্ধারিত সময়ের আগেই সম্পন্ন হয়েছে। মানসম্মত সার্ভিস।"
+    },
+    {
+      "id": 4,
+      "serviceEn": "Short Circuit & Fuse Fix",
+      "serviceBn": "শর্ট সার্কিট ও ফিউজ ঠিক করা",
+      "name": "Alamin Hossain",
+      "feedbackEn": "Short circuit issue solved quickly without any hassle. Loved their prompt service.",
+      "feedbackBn": "শর্ট সার্কিটের সমস্যা দ্রুত সমাধান হয়েছে। দ্রুত সাপোর্ট পেয়ে ভালো লেগেছে।"
+    },
+    {
+      "id": 5,
+      "serviceEn": "Fan & Light Installation",
+      "serviceBn": "ফ্যান ও লাইট লাগানো",
+      "name": "Nasima Akter",
+      "feedbackEn": "Very neat and clean installation of fans and lights. Highly reliable team.",
+      "feedbackBn": "খুব পরিপাটি ও পরিষ্কারভাবে ফ্যান ও লাইট লাগিয়েছে। খুবই নির্ভরযোগ্য টিম।"
+    },
+    {
+      "id": 6,
+      "serviceEn": "Switch & Socket Repair",
+      "serviceBn": "সুইচ ও সকেট মেরামত",
+      "name": "Kawsar Mia",
+      "feedbackEn": "Old switches replaced smoothly. No hassle at all. Affordable price too.",
+      "feedbackBn": "পুরাতন সুইচ পরিবর্তন খুব সুন্দরভাবে করা হয়েছে। কোনো ঝামেলা হয়নি। মূল্যও ভালো।"
+    },
+    {
+      "id": 7,
+      "serviceEn": "Home Electrical Wiring",
+      "serviceBn": "সম্পূর্ণ ঘরের তারের কাজ",
+      "name": "Fatema Begum",
+      "feedbackEn": "Wiring done very professionally. Explained everything before starting.",
+      "feedbackBn": "তার টানানোর কাজ খুব প্রফেশনালভাবে হয়েছে। কাজের আগে সবকিছু বুঝিয়ে দিয়েছে।"
+    },
+    {
+      "id": 8,
+      "serviceEn": "Short Circuit & Fuse Fix",
+      "serviceBn": "শর্ট সার্কিট ও ফিউজ ঠিক করা",
+      "name": "Mamun Mia",
+      "feedbackEn": "Fuse replacement and circuit fixing done efficiently. I'm satisfied.",
+      "feedbackBn": "ফিউজ পরিবর্তন ও সার্কিট ঠিক করার কাজ সুন্দরভাবে হয়েছে। আমি সন্তুষ্ট।"
+    }
+  ]
+  
