@@ -26,7 +26,7 @@ const ServicesDetails = () => {
   return (
     <div>
       <div
-        className="bg-cover bg-no-repeat h-[80vh] relative z-10"
+        className="bg-cover bg-no-repeat h-[80vh] relative z-10 hidden"
         style={{ backgroundImage: `url(${images})` }}
       >
         <div className="absolute inset-0 w-full h-full bg-black/50 z-20">

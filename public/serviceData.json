@@ -4,21 +4,8 @@
     "name": "Fan",
     "serviceEn": "Fan & Light Installation",
     "serviceBn": "ফ্যান ও লাইট লাগানো",
+    "images":"https://vision.com.bd/images/thumbnails/240/290/detailed/31/Code_876094_Vision_Royal_Ceiling_Fan-56%27%27__Maroon_.jpg.png",
 
-    "benefits": [
-      "Quick and safe installation",
-      "High-quality wire & switch",
-      "Old fan removal & new setup",
-      "Post-installation cleaning",
-      "Budget-friendly service"
-    ],
-    "benefits_bn": [
-      "দ্রুত ও নিরাপদ ইন্সটলেশন",
-      "উন্নত মানের তার ও সুইচ",
-      "পুরাতন ফ্যান খুলে নতুন ফ্যান বসানো",
-      "ইন্সটলেশনের পর পরিষ্কার-পরিচ্ছন্নতা",
-      "সাশ্রয়ী মূল্য"
-    ],
     "comments_en": [
       {
         "name": "Ahmed Ali",
@@ -79,15 +66,51 @@
     "pricing": [
       {
         "name": "Basic Fan Installation",
-        "price": 500
+        "price": 500,
+        "benefits": [
+          "Standard fan installation",
+          "Basic wiring setup",
+          "Mounting support included",
+          "3-month service warranty"
+        ],
+        "benefits_bn": [
+          "স্ট্যান্ডার্ড ফ্যান ইনস্টলেশন",
+          "বেসিক তার সংযোগ",
+          "মাউন্টিং সাপোর্টসহ",
+          "৩ মাসের সার্ভিস ওয়ারেন্টি"
+        ]
       },
       {
         "name": "Advanced Fan Installation",
-        "price": 800
+        "price": 800,
+        "benefits": [
+          "Ceiling & wall fan installation",
+          "Advanced wiring & switch setup",
+          "Balancing check included",
+          "6-month service warranty"
+        ],
+        "benefits_bn": [
+          "সিলিং ও ওয়াল ফ্যান ইনস্টলেশন",
+          "অ্যাডভান্সড তার ও সুইচ সংযোগ",
+          "ব্যালান্সিং চেকসহ",
+          "৬ মাসের সার্ভিস ওয়ারেন্টি"
+        ]
       },
       {
         "name": "Emergency Fan Installation",
-        "price": 1000
+        "price": 1000,
+        "benefits": [
+          "Emergency on-call fan installation",
+          "Any type of fan supported",
+          "Immediate balancing & testing",
+          "1-year service warranty"
+        ],
+        "benefits_bn": [
+          "ইমার্জেন্সি অন-কল ফ্যান ইনস্টলেশন",
+          "যেকোনো ধরনের ফ্যান সাপোর্টেড",
+          "তৎক্ষণাৎ ব্যালান্সিং ও টেস্টিং",
+          "১ বছরের সার্ভিস ওয়ারেন্টি"
+        ]
       }
     ]
   },
@@ -96,21 +119,7 @@
     "name": "Switch",
     "serviceEn": "Switch & Socket Repair",
     "serviceBn": "সুইচ ও সকেট মেরামত",
-
-    "price": 250,
-    "price_card": "Basic Switch Repair",
-    "benefits": [
-      "Quick troubleshooting",
-      "Safe replacement",
-      "Durable materials",
-      "Warranty on repair"
-    ],
-    "benefits_bn": [
-      "দ্রুত সমস্যা সমাধান",
-      "নিরাপদ রিপ্লেসমেন্ট",
-      "টেকসই মালামাল",
-      "মেরামতের ওয়ারেন্টি"
-    ],
+    "images":"https://img.drz.lazcdn.com/static/bd/p/35418e2c531c11d338ebac242f7f3a6b.jpg_400x400q75.avif",
     "comments_en": [
       {
         "name": "Abu Bakr",
@@ -170,15 +179,51 @@
     "pricing": [
       {
         "name": "Basic Short Switch Repair",
-        "price": 400
+        "price": 400,
+        "benefits": [
+          "Basic switch inspection",
+          "Loose connection fix",
+          "Fuse check",
+          "3-month service warranty"
+        ],
+        "benefits_bn": [
+          "বেসিক সুইচ পরিদর্শন",
+          "লুজ কানেকশন ঠিক করা",
+          "ফিউজ পরীক্ষা",
+          "৩ মাসের সার্ভিস ওয়ারেন্টি"
+        ]
       },
       {
         "name": "Advanced Short Switch Repair",
-        "price": 600
+        "price": 600,
+        "benefits": [
+          "Full switchboard inspection",
+          "Wiring issue fix",
+          "Fuse & switch replacement",
+          "6-month service warranty"
+        ],
+        "benefits_bn": [
+          "সম্পূর্ণ সুইচবোর্ড পরিদর্শন",
+          "তার সংযোগ সমস্যা সমাধান",
+          "ফিউজ ও সুইচ পরিবর্তন",
+          "৬ মাসের সার্ভিস ওয়ারেন্টি"
+        ]
       },
       {
         "name": "Emergency Short Switch Repair",
-        "price": 1000
+        "price": 1000,
+        "benefits": [
+          "Emergency on-call service",
+          "Full house switchboard check",
+          "Immediate replacement service",
+          "1-year service warranty"
+        ],
+        "benefits_bn": [
+          "ইমার্জেন্সি অন-কল সার্ভিস",
+          "সম্পূর্ণ বাড়ির সুইচবোর্ড পরীক্ষা",
+          "তৎক্ষণাৎ সুইচ পরিবর্তন",
+          "১ বছরের সার্ভিস ওয়ারেন্টি"
+        ]
       }
     ]
   },
@@ -187,19 +232,8 @@
     "name": "Wiring",
     "serviceEn": "Home Electrical Wiring",
     "serviceBn": "সম্পূর্ণ ঘরের তারের কাজ",
+    "images":"https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-16355.jpg?uid=R160180879&ga=GA1.1.965207152.1738055117&semt=ais_hybrid&w=740",
 
-    "benefits": [
-      "High-quality wiring setup",
-      "Modern circuit system",
-      "Design-based wiring",
-      "Warranty supported service"
-    ],
-    "benefits_bn": [
-      "উন্নত তার সংযোগ",
-      "আধুনিক সার্কিট সিস্টেম",
-      "ডিজাইন অনুযায়ী তার সংযোগ",
-      "ওয়ারেন্টি সহকারে সার্ভিস"
-    ],
     "comments_en": [
       {
         "name": "Ali ibn Abi Talib",
@@ -260,15 +294,53 @@
     "pricing": [
       {
         "name": "Basic Wiring Package",
-        "price": 1500
+        "price": 1500,
+        "benefits": [
+          "Standard quality wiring",
+          "Basic safety check",
+          "3-month service warranty",
+          "Fuse replacement if needed"
+        ],
+        "benefits_bn": [
+          "স্ট্যান্ডার্ড মানের তার সংযোগ",
+          "বেসিক সেফটি চেক",
+          "৩ মাসের সার্ভিস ওয়ারেন্টি",
+          "প্রয়োজনে ফিউজ পরিবর্তন"
+        ]
       },
       {
         "name": "Premium Wiring Package",
-        "price": 2000
+        "price": 2000,
+        "benefits": [
+          "High-quality wiring",
+          "Advanced safety inspection",
+          "6-month service warranty",
+          "Modern circuit system setup"
+        ],
+        "benefits_bn": [
+          "উন্নত মানের তার সংযোগ",
+          "আধুনিক সেফটি পরিদর্শন",
+          "৬ মাসের সার্ভিস ওয়ারেন্টি",
+          "আধুনিক সার্কিট সিস্টেম সেটআপ"
+        ]
       },
       {
         "name": "Custom Wiring Package",
-        "price": 2500
+        "price": 2500,
+        "benefits": [
+          "Premium quality wiring setup",
+          "Full house diagnostic check",
+          "1-year service warranty",
+          "Custom design-based wiring",
+          "Emergency service support"
+        ],
+        "benefits_bn": [
+          "প্রিমিয়াম মানের তার সংযোগ",
+          "সম্পূর্ণ বাড়ির ডায়াগনস্টিক চেক",
+          "১ বছরের সার্ভিস ওয়ারেন্টি",
+          "ডিজাইন অনুযায়ী তার সংযোগ",
+          "ইমার্জেন্সি সার্ভিস সাপোর্ট"
+        ]
       }
     ]
   },
@@ -278,18 +350,8 @@
     "serviceEn": "Short Circuit & Fuse Fix",
     "serviceBn": "শর্ট সার্কিট ও ফিউজ ঠিক করা",
     "price_card": "Premium House Wiring",
-    "benefits": [
-      "High-quality wiring setup",
-      "Modern circuit system",
-      "Design-based wiring",
-      "Warranty supported service"
-    ],
-    "benefits_bn": [
-      "উন্নত তার সংযোগ",
-      "আধুনিক সার্কিট সিস্টেম",
-      "ডিজাইন অনুযায়ী তার সংযোগ",
-      "ওয়ারেন্টি সহকারে সার্ভিস"
-    ],
+    "images":"https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15086.jpg?uid=R160180879&ga=GA1.1.965207152.1738055117&semt=ais_hybrid&w=740",
+
     "comments_en": [
       {
         "name": "Ali ibn Abi Talib",
@@ -349,15 +411,51 @@
     "pricing": [
       {
         "name": "Basic Short Circuit Repair",
-        "price": 500
+        "price": 500,
+        "benefits": [
+          "Standard wiring setup",
+          "Basic circuit inspection",
+          "Fuse replacement",
+          "3-month service warranty"
+        ],
+        "benefits_bn": [
+          "স্ট্যান্ডার্ড তার সংযোগ",
+          "বেসিক সার্কিট পরিদর্শন",
+          "ফিউজ পরিবর্তন",
+          "৩ মাসের সার্ভিস ওয়ারেন্টি"
+        ]
       },
       {
         "name": "Advanced Short Circuit Repair",
-        "price": 800
+        "price": 800,
+        "benefits": [
+          "High-quality wiring setup",
+          "Advanced circuit system inspection",
+          "Fuse & breaker replacement",
+          "6-month service warranty"
+        ],
+        "benefits_bn": [
+          "উন্নত তার সংযোগ",
+          "আধুনিক সার্কিট সিস্টেম পরিদর্শন",
+          "ফিউজ ও ব্রেকার পরিবর্তন",
+          "৬ মাসের সার্ভিস ওয়ারেন্টি"
+        ]
       },
       {
         "name": "Emergency Short Circuit Repair",
-        "price": 1000
+        "price": 1000,
+        "benefits": [
+          "Premium wiring setup",
+          "Full system diagnostic",
+          "Immediate fuse & breaker service",
+          "1-year service warranty"
+        ],
+        "benefits_bn": [
+          "প্রিমিয়াম তার সংযোগ",
+          "সম্পূর্ণ সিস্টেম ডায়াগনস্টিক",
+          "তাৎক্ষণিক ফিউজ ও ব্রেকার সার্ভিস",
+          "১ বছরের সার্ভিস ওয়ারেন্টি"
+        ]
       }
     ]
   }

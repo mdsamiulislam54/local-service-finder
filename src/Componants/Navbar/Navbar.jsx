@@ -390,7 +390,7 @@ const Navbar = () => {
                 className={`btn bg-white text-black border-[#e5e5e5]`}
               >
                 <RiAccountPinBoxFill />
-                Create a account
+                Create a account Wit Email
               </button>
             </div>
             {showFormType === "signin" && (

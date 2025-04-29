@@ -1,48 +1,85 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaCheckCircle } from "react-icons/fa";
 import { MdOutlineAttachMoney } from "react-icons/md";
 
 const Details = ({ data }) => {
-    if (!data || !data.description_en) {
-        return <div>Loading...</div>;
-      }
-    
+  if (!data || !data.description_en) {
+    return <div>Loading...</div>;
+  }
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language;
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+    <div className=" gap-6 p-4">
       {/* Left: Features */}
-      <div className="shadow p-4 rounded-xl bg-white">
-        <h2 className="text-xl font-semibold mb-4">Features</h2>
-        <ul className="space-y-2">
-          {data?.benefits?.map((item, index) => (
-            <li key={index} className="flex items-center gap-2 text-gray-700">
-              <FaCheckCircle className="text-green-500" /> {item}
-            </li>
-          ))}
-        </ul>
+      <div className=" grid lg:grid-cols-3">
+        <div className="shadow  rounded-xl col-span-1">
+          <h2 className="text-xl font-semibold mb-4 hover:border-r-2 border-red-500 pl-2 py-2  duration-300 transition-all">Service Overview</h2>
+          <h2 className="text-xl font-semibold mb-4 hover:border-r-2 border-red-500 pl-2 py-2  duration-300 transition-all">Faq</h2>
+          <h2 className="text-xl font-semibold mb-4 hover:border-r-2 border-red-500 pl-2 py-2  duration-300 transition-all">What's Included</h2>
+          <h2 className="text-xl font-semibold mb-4 hover:border-r-2 border-red-500 pl-2 py-2  duration-300 transition-all">How to order</h2>
+          <h2 className="text-xl font-semibold mb-4 hover:border-r-2 border-red-500 pl-2 py-2  duration-300 transition-all">Reviews</h2>
+        
+         
+        </div>
+        <div className="col-span-2 flex justify-center items-center shadow">
+          
+          
+              <img src={data.images}/>
+          
+          
+        </div>
+       
       </div>
 
       {/* Center: Content */}
-      <div className="shadow p-4 rounded-xl bg-white">
+      <div className="shadow p-4 rounded-xl bg-white col-span-4">
         <h2 className="text-xl font-semibold mb-4">{data.serviceEn}</h2>
         <p className="text-gray-700 mb-3">{data.description_en?.part1}</p>
         <p className="text-gray-700 mb-3">{data.description_en?.part2}</p>
         <p className="text-gray-700 mb-3">{data.description_en?.part3}</p>
         <p className="text-gray-700">{data.description_en?.part4}</p>
       </div>
+      <div className="shadow p-4 rounded-xl  col-span-2">
+          <h2 className="text-xl font-semibold mb-4">Pricing</h2>
+          <div className="space-y-2 flex justify-between items-center gap-3">
+            {data?.pricing?.map((item, index) => (
+              <div key={index} className="card w-96 h-96 bg-base-100 shadow-sm relative">
+                <div className="card-body border-r">
+                  <span className="badge badge-xs badge-warning">
+                    Most Popular
+                  </span>
+                  <div className="flex justify-between">
+                    <h2 className="text-xl font-bold">{item.name}</h2>
+                    <span className="text-xl">৳{item.price}/mo</span>
+                  </div>
+                  <ul className="mt-6 flex flex-col gap-2 text-xs">
+                   
+                    
+                      {
+                      (currentLang === "bn"? item.benefits_bn:item.benefits).map((b)=>   <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                      <span>{b}</span>
+                    </li>)
+                      }
+                      
+                 
+              
+                    
+                  </ul>
+                  <div className="mt-6 absolute bottom-0 btn-block left-0 px-3">
+                    <button className="btn btn-primary btn-block">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
       {/* Right: Price Card */}
-      <div className="shadow p-4 rounded-xl bg-white">
-        <h2 className="text-xl font-semibold mb-4">Pricing</h2>
-        <ul className="space-y-2">
-          {data?.pricing?.map((item, index) => (
-            <li key={index} className="flex items-center gap-2 text-gray-700">
-              <MdOutlineAttachMoney className="text-blue-600" />{" "}
-              <span className="font-medium">{item.name}</span> -{" "}
-              <span className="font-semibold">{item.price}৳</span>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };
