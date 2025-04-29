@@ -32,7 +32,7 @@ const ServicesDetails = () => {
         <div className="absolute inset-0 w-full h-full bg-black/50 z-20">
         <div className="z-100 text-white flex flex-col justify-center items-center mt-[14%]">
           <h2 className="text-5xl font-bold tracking-wider">
-            {currentLang === "bn" ? services.serviceBn : services.serviceEn}
+            {currentLang === "bn" ? services?.serviceBn : services?.serviceEn}
           </h2>
         </div>
         </div>
