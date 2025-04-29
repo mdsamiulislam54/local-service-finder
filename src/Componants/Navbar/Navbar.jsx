@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { RiAccountPinBoxFill } from "react-icons/ri";
@@ -9,17 +9,22 @@ import i18n from "../../i18n";
 import { Link, useNavigate } from "react-router-dom";
 import {
   createUserWithEmailAndPassword,
+  GoogleAuthProvider,
   signInWithEmailAndPassword,
+  signInWithPopup,
   updateProfile,
 } from "firebase/auth";
 
 import auth from "../../firbase-init";
 import Swal from "sweetalert2";
+import { UserLoginContext } from "../../ContextApi/UserLogin";
 
 const Navbar = () => {
   const [showFormType, setShowFormType] = useState(null);
   const [passwordShow, setPasswordShow] = useState(false);
   const [errorMessage, setErrorMessage] = useState('')
+  const {setUser,user} = useContext(UserLoginContext)
+  console.log(user)
 
   const [theme, setTheme] = useState("");
   const navigate = useNavigate();
@@ -101,7 +106,7 @@ const Navbar = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(password, email);
-
+    setErrorMessage('')
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         document.getElementById("my_modal_1").close();
@@ -115,15 +120,30 @@ const Navbar = () => {
         fromFild.reset();
       })
       .catch((error) => {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: error.message,
-          confirmButtonColor: "red",
-        });
-        document.getElementById("my_modal_1").close();
+        setErrorMessage(error.message,'user not valid')
       });
   };
+
+  const handleGoogleSign = (e)=>{
+    e.preventDefault();
+
+    const provider = new GoogleAuthProvider()
+    signInWithPopup(auth,provider)
+    .then((result)=>{
+      document.getElementById("my_modal_1").close();
+        Swal.fire({
+          icon: "success",
+          title: "Registration Successful!",
+          text: `Welcome, ${name}!`,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "Okay",
+        });
+        setUser(result.user)
+
+    }).catch((error)=>{
+      console.log(error)
+    })
+  }
 
   return (
     <nav className="navbar bg-base-100 shadow-md sticky top-0 z-100">
@@ -331,7 +351,7 @@ const Navbar = () => {
                 </svg>
                 Login with Email
               </button>
-              <button className="btn bg-white text-black border-[#e5e5e5]">
+              <button onClick={handleGoogleSign} className="btn bg-white text-black border-[#e5e5e5]">
                 <svg
                   aria-label="Google logo"
                   width="16"
@@ -412,7 +432,11 @@ const Navbar = () => {
                       )}
                     </span>
                   </div>
-
+                  {
+                    errorMessage && (
+                      <p className="text-red-500 ">{errorMessage}</p>
+                    )
+                  }
                   <input
                     type="submit"
                     required
