@@ -2,20 +2,31 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { RiAccountPinBoxFill } from "react-icons/ri";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 
 import i18n from "../../i18n";
 import { Link, useNavigate } from "react-router-dom";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
 
 import auth from "../../firbase-init";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [showFormType, setShowFormType] = useState(null);
+  const [passwordShow, setPasswordShow] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('')
 
   const [theme, setTheme] = useState("");
   const navigate = useNavigate();
-  const fromRef = useRef(null)
+  const handleServicesPage = (Sname) => {
+    navigate(`/services/${Sname}`);
+  };
+  const fromRef = useRef(null);
   useEffect(() => {
     const savedThems = localStorage.getItem("theme") || "light";
     setTheme(savedThems);
@@ -45,39 +56,73 @@ const Navbar = () => {
 
   const handleCreateAccount = (e) => {
     e.preventDefault();
-    const fromFild = fromRef.current
+    const fromFild = fromRef.current;
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(name,email,password)
+    const terms = e.target.checkbox.checked
+   
+    setErrorMessage('')
 
+    const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/
+    if(passwordRegex.test(password) === false){
+      setErrorMessage('Password must be at least 6 characters, include 1 uppercase, 1 lowercase, 1 number and 1 special character.')
+      return;
+    }
+    if(!terms){
+      setErrorMessage("You must accept the Terms and Conditions to continue!")
+      return; 
+    }
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const user = result.user;
         updateProfile(auth.currentUser, {
-          displayName: name
-        })
+          displayName: name,
+        });
         document.getElementById("my_modal_1").close();
         Swal.fire({
-          icon: 'success',
-          title: 'Registration Successful!',
+          icon: "success",
+          title: "Registration Successful!",
           text: `Welcome, ${name}!`,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'Okay'
-        })
-        fromFild.reset()
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "Okay",
+        });
+        fromFild.reset();
         console.log(user);
       })
       .catch((error) => {
+       setErrorMessage(error.message)
+      });
+  };
+
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    const fromFild = fromRef.current;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(password, email);
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((result) => {
         document.getElementById("my_modal_1").close();
         Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
+          icon: "success",
+          title: "Login Successful!",
+          text: `Welcome, ${result.user.displayName}!`,
+          confirmButtonColor: "red",
+          confirmButtonText: "Okay",
+        });
+        fromFild.reset();
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
           text: error.message,
-          confirmButtonColor: '#d33',
-        })
+          confirmButtonColor: "red",
+        });
+        document.getElementById("my_modal_1").close();
       });
-      
   };
 
   return (
@@ -255,7 +300,11 @@ const Navbar = () => {
 
         <dialog id="my_modal_1" className="modal">
           <div className="modal-box">
-            <div className={`flex flex-col space-y-5 ${showFormType  === null ? "block":"hidden"} `}>
+            <div
+              className={`flex flex-col space-y-5 ${
+                showFormType === null ? "block" : "hidden"
+              } `}
+            >
               <button
                 onClick={() => {
                   handleSignInBtn("signin");
@@ -325,7 +374,7 @@ const Navbar = () => {
               </button>
             </div>
             {showFormType === "signin" && (
-              <form ref={fromRef}  className={``}>
+              <form ref={fromRef} className={``} onSubmit={handleSignIn}>
                 <span className="btn" onClick={() => handleBack(null)}>
                   <IoIosArrowRoundBack size={24} />
                 </span>
@@ -338,20 +387,35 @@ const Navbar = () => {
                   <input
                     type="text"
                     name="email"
+                    required
                     className="input w-full"
                     placeholder="Enter Your Email.."
                   />
 
                   <label className="label">Password:</label>
-                  <input
-                    type="password"
-                    name="password"
-                    className="input w-full"
-                    placeholder="Enter Your Password.."
-                  />
+                  <div className="relative">
+                    <input
+                      type={passwordShow ? "text" : "password"}
+                      name="password"
+                      required
+                      className="input w-full"
+                      placeholder="Enter Your Password.."
+                    />
+                    <span
+                      onClick={() => setPasswordShow(!passwordShow)}
+                      className="absolute right-1 top-2 cursor-pointer"
+                    >
+                      {passwordShow ? (
+                        <FaRegEye size={20} />
+                      ) : (
+                        <FaRegEyeSlash size={20} />
+                      )}
+                    </span>
+                  </div>
 
                   <input
                     type="submit"
+                    required
                     className="btn text-white bg-red-500 my-4"
                     placeholder="Name"
                     value="Sign In"
@@ -360,11 +424,7 @@ const Navbar = () => {
               </form>
             )}
             {showFormType === "signup" && (
-              <form
-              ref={fromRef}
-               onSubmit={handleCreateAccount}
-                className={``}
-              >
+              <form ref={fromRef} onSubmit={handleCreateAccount} className={``}>
                 <span className="btn" onClick={() => handleBack(false)}>
                   <IoIosArrowRoundBack size={24} />
                 </span>
@@ -372,10 +432,11 @@ const Navbar = () => {
                   <legend className="fieldset-legend text-center text-xl">
                     Sing Up
                   </legend>
-                  
+
                   <label className="label">Name:</label>
                   <input
                     type="text"
+                    required
                     name="name"
                     className="input w-full"
                     placeholder="Enter Your Name.."
@@ -383,19 +444,45 @@ const Navbar = () => {
                   <label className="label">Email:</label>
                   <input
                     type="text"
+                    required
                     name="email"
                     className="input w-full"
                     placeholder="Enter Your Email.."
                   />
 
                   <label className="label">Password:</label>
-                  <input
-                    type="password"
-                    name="password"
-                    className="input w-full"
-                    placeholder="Enter Your Password.."
-                  />
-
+                  <div className="relative">
+                    <input
+                      type={passwordShow ? "text" : "password"}
+                      name="password"
+                      className="input w-full"
+                      placeholder="Enter Your Password.."
+                    />
+                    <span
+                      onClick={() => setPasswordShow(!passwordShow)}
+                      className="absolute right-1 top-2 cursor-pointer"
+                    >
+                      {passwordShow ? (
+                        <FaRegEye size={20} />
+                      ) : (
+                        <FaRegEyeSlash size={20} />
+                      )}
+                    </span>
+                  </div>
+                  <label className="label">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      defaultChecked
+                      className="checkbox"
+                    />
+                    I agree to the Terms and Conditions
+                  </label>
+                  {
+                    errorMessage && (
+                      <p className="text-red-500 ">{errorMessage}</p>
+                    )
+                  }
                   <input
                     type="submit"
                     className="btn text-white bg-red-500 my-4"
