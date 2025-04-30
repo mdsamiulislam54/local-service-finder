@@ -229,7 +229,7 @@ const Navbar = () => {
               </li>
 
               <li>
-                <Link className="text-xl font-medium tracking-wide">
+                <Link to={'/contact'} className="text-xl font-medium tracking-wide">
                   {t("navbar.contact")}
                 </Link>
               </li>
@@ -272,7 +272,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link className="text-xl font-medium tracking-wide">
+              <Link to={'/contact'} className="text-xl font-medium tracking-wide">
                 {t("navbar.contact")}
               </Link>
             </li>

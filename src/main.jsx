@@ -8,6 +8,7 @@ import Home from "./Componants/Home/Home.jsx";
 import AboutUs from "./Componants/AboutUs/AboutUs.jsx";
 import ServicesDetails from "./Componants/ServicesDetails/ServicesDetails.jsx";
 import UserLoginContextProvider from "./ContextApi/UserLogin.jsx";
+import Contact from "./Componants/Contact/Contact.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path: "services/:serviceName",
         element: <ServicesDetails />,
       },
+      {
+        path:'/contact',
+        element:<Contact/>
+      }
     ],
   },
 ]);
