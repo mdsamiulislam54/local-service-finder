@@ -1,12 +1,71 @@
-# React + Vite
+# SebaFinder Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive service details web application built with **React**, **Tailwind CSS**, **React Icons**, and **Firebase Authentication**. The app displays service features, descriptions, and pricing plans. It fetches service data from a JSON file and allows user authentication using Firebase.
 
-Currently, two official plugins are available:
+---
+👉 [Live Site](https://sebafinder.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📝 Service features list with icons  
+- 📑 Detailed service descriptions divided into multiple parts  
+- 💸 Dynamic pricing card for each service  
+- 🔐 User Authentication with Firebase (Email/Password, Google Sign-In)  
+- 📱 Fully responsive and mobile-friendly  
+- 🎨 Styled with Tailwind CSS and React Icons  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Technologies Used
+
+- **React**
+- **Tailwind CSS**
+- **React Icons**
+- **React Router**
+- **Firebase Authentication**
+- **JSON (for service data)**
+
+---
+
+## 📂 Project Structure
+
+
+
+---
+
+## 🔥 Firebase Authentication Setup
+
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create a new project
+3. Go to **Authentication** → **Sign-in Method**
+4. Enable **Email/Password** and **Google**
+5. Copy your Firebase config and paste it into `src/firebase/firebase.config.js`
+
+```javascript
+// src/firebase/firebase.config.js
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export default app;
+
+```
+
+
+# Install dependencies
+### npm install
+# Start the development server 
+### npm run dev (or npm start)
+# Open your browser 
+### http://localhost:5173 (if using Vite)
+
