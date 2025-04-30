@@ -264,7 +264,7 @@ const Navbar = () => {
                   <li onClick={() => handleServicesPage("Wiring")}>
                     <Link>{t("services.service3")}</Link>
                   </li>
-                  <li onClick={() => handleServicesPage("ShortCircuit")}>
+                  <li onClick={() => handleServicesPage("Circuit")}>
                     <Link>{t("services.service4")}</Link>
                   </li>
                 </ul>
